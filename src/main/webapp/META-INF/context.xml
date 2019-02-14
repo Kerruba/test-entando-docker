@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/test1" docBase="./test1" debug="1" reloadable="false">
+	<!--
+	<Environment name="logActiveFileOutput" value="${profile.log.activeFileOutput}" type="java.lang.String" override="false" />
+	<Environment name="logName" value="test1" type="java.lang.String" override="false" />
+	<Environment name="logFilePrefix" value="/opt/jboss/logs/test1_log" type="java.lang.String" override="false" />
+	<Environment name="logLevel" value="WARN" type="java.lang.String" override="false" />
+	<Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
+	<Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+	
+	<Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+	
+	<Environment name="applicationBaseURL" value="http://www.mydomain.com/test1/" type="java.lang.String" override="false" />
+	<Environment name="resourceRootURL" value="/test1/resources/" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceRootURL" value="/test1/protected/" type="java.lang.String" override="false" />
+	
+	<Environment name="resourceDiskRootFolder" value="/opt/jboss/standalone/deployments/test1/resources" type="java.lang.String" override="false" />
+	<Environment name="protectedResourceDiskRootFolder" value="/opt/jboss/standalone/deployments/test1/protected" type="java.lang.String" override="false" />
+	
+	<Environment name="indexDiskRootFolder" value="/opt/jboss/standalone/deployments/test1/indexdir" type="java.lang.String" override="false" />
+	
+	<Environment name="portDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+	<Environment name="servDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+	
+	<Resource name="jdbc/portDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/opt/jboss/webapps/test1/derby/production/test1Port;create=true" />
+	
+	<Resource name="jdbc/servDataSource" auth="Container" 
+		type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+		maxActive="8" maxIdle="4" 
+		username="agile" password="agile" 
+		url="jdbc:derby:/opt/jboss/webapps/test1/derby/production/test1Serv;create=true" />
+	-->
+</Context>
