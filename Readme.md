@@ -4,7 +4,7 @@ The idea behind this repo is to provide a docker test environment for an Entando
 
 # Requirements
 
-- Docker
+- Docker (I've followed [this guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) to properly install docker on my ubuntu machine)
 - entando-components on branch **EN-2382-Jobs_endpoint**
 
 # How to test this repo
@@ -32,8 +32,20 @@ mvn clean install -DskipTests
 cd test1-entando-docker
 
 # Build docker images and run the containers
-mvn clean install -Pwildfly -Ppostgres docker:run
+mvn clean install -Pwildfly -Ppostgresql docker:run
 
+```
+
+### Something went wrong during run - stop containers and clear them
+If something went wrong during the installation, could be that the containers will remain up and you are not 
+able to run the mvn command. You can try to stop the containers and delete them. If you don't care of removing all stopped containers on your machine you can run
+
+```bash
+# Stop containers
+mvn -Pwildfly -Ppostgresql docker:stop 
+
+# Remove all stopped containers from your machine
+docker container prune -f
 ```
 
 ## Check the ports on docker
