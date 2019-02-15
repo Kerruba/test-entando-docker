@@ -39,7 +39,7 @@
         <!--Uncomment if you want to access AppBuilder from your browser-->
         <!--<appbuilder.port>5000</appbuilder.port>-->
         <!--Uncomment if you want to connect to PostgreSQL locally-->
-        <!--<db.server.local.port>5432</db.server.local.port>-->
+        <db.server.local.port>5432</db.server.local.port>
         <!--Uncomment if you want to connect to MySQL locally-->
         <!--<db.server.local.port>3306</db.server.local.port>-->
     </properties>
@@ -60,7 +60,7 @@
             <properties>
                 <!--Image configuration -->
                 <skipDocker>false</skipDocker>
-                <skipAppBuilderImage>false</skipAppBuilderImage>
+                <skipAppBuilderImage>true</skipAppBuilderImage>
                 
                 <entando.engine.address>localhost</entando.engine.address>
                 <app.builder.depends.on></app.builder.depends.on>
@@ -68,7 +68,7 @@
                 <skipServerImage>true</skipServerImage>
                 <jboss.home.in.image>none</jboss.home.in.image>
                 <entando.engine.port>8080</entando.engine.port>
-                <server.base.image>none</server.base.image>
+		<server.base.image>none</server.base.image>
 
                 <derby.base.folder>${project.build.directory}/derby/${env.db.environment}</derby.base.folder>
             </properties>
@@ -193,7 +193,7 @@
     </profiles>
 
     <build>
-        <finalName>entando-pam-app</finalName>
+        <finalName>test1</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -296,7 +296,6 @@
                                         <volume>${project.artifactId}-entando-db-data:${db.volume.mount.path}</volume>
                                     </bind>
                                 </volumes>
-                                >
                                 <log>
                                     <enabled>true</enabled>
                                     <prefix>dbms:</prefix>
@@ -957,12 +956,12 @@
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
-        <dependency>
+	<dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpdigital-exchange</artifactId>
             <version>${entando.version}</version>
             <type>war</type>
-        </dependency>
+	</dependency>
         <!-- enable if you need to test Oracle DB connection with jetty -->
         <!--<dependency>
             <groupId>com.oracle</groupId>
