@@ -5,7 +5,7 @@ The idea behind this repo is to provide a docker test environment for an Entando
 # Requirements
 
 - Docker
-- entando-components on branch **EN-2893-Jobs_endpoint**
+- entando-components on branch **EN-2382-Jobs_endpoint**
 
 # How to test this repo
 
@@ -20,7 +20,7 @@ mvn clean install -DskipTests
 ## Entando components
 ```bash
 # If you're still on the master branch switch to EN-2893-Jobs_endpoint
-git checkout EN-2893-Jobs endpoint
+git checkout EN-2382-Jobs endpoint
 
 mvn clean install -DskipTests
 ```
