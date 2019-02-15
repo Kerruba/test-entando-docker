@@ -20,7 +20,7 @@ mvn clean install -DskipTests
 ## Entando components
 ```bash
 # If you're still on the master branch switch to EN-2893-Jobs_endpoint
-git checkout EN-2382-Jobs endpoint
+git checkout EN-2382-Jobs_endpoint
 
 mvn clean install -DskipTests
 ```
